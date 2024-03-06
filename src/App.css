@@ -1,0 +1,238 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; 
+  background-color: #bc6060; 
+}
+
+
+
+.container {
+  position: relative; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+
+
+.box-with-circular-ends {
+  position: fixed;
+  top: 50%;
+  left: 230px;
+
+  transform: translate(-50%, -50%); 
+  width: 300px; 
+  height:200c;
+  padding: 20px; 
+  background-color:rgb(44, 237, 231); 
+  border-radius: 20px; 
+  z-index: 1; 
+}
+
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 300px; 
+  padding: 2rem;
+  box-sizing: border-box;
+  background-color: white;
+  border-radius: 10px; 
+  box-shadow: 0 0 10px rgba(19, 137, 96, 0.1); 
+  margin-right: 2rem; 
+  
+}
+
+.pickup-location,.date,.seats,
+.drop-location {
+  margin-bottom: 1rem;
+  width: 100%;
+  max-width: 300px; 
+}
+
+.pickup-location input,.date input,.seats input,
+.drop-location input {
+  padding: 0.5rem;
+  width: 100%;
+}
+
+
+button {
+  background-color: black;
+  color: white; 
+  padding: 10px 20px; 
+  border: none; 
+  border-radius: 5px; 
+  cursor: pointer; 
+}
+
+button:hover {
+  background-color: darkgray; 
+}
+
+
+.map-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw; 
+  height: 200vh; 
+  z-index: 0; 
+  margin: 0;
+  padding: 0;
+}
+.ride-options-container {
+  position: fixed;
+  top: 50%;
+  left: 230px;
+
+  transform: translate(-50%, -50%); 
+  width: 300px; 
+  height:200c;
+  padding: 20px; 
+  background-color:rgb(44, 237, 231); 
+  border-radius: 20px; 
+  z-index: 1;
+  
+  
+}
+
+.ride-option {
+  margin-bottom: 20px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+
+}
+
+.ride-option-image {
+  width: 100px; 
+  height: auto; 
+  
+}
+.ride-option-image-container {
+  flex-shrink: 0;
+  margin-right: 20px;
+}
+
+.ride-option-details {
+  flex-grow: 1; 
+}
+
+.ride-option h3 {
+  margin-bottom: 5px;
+}
+
+.ride-option p {
+  margin: 0;
+}
+.ride-option:hover {
+  background-color: #f4f4f4;
+}
+
+.ride-option button {
+  background-color: #007bff;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 16px;
+  cursor: pointer;
+}
+
+.ride-option button:hover {
+  background-color: #0056b3;
+}
+
+.confirmation-container {
+  
+  position:fixed;
+  top:50%;
+  left:230px;
+  max-width: 400px;
+  transform: translate(-50%, -50%); 
+  margin: 0 auto;
+  width: 300px; 
+  height:200c;
+  padding: 20px; 
+  background-color:rgb(44, 237, 231); 
+  border-radius: 20px; 
+  z-index: 1;
+  
+}
+
+.confirmation-container h2 {
+  text-align: center;
+}
+
+.selected-option-card {
+  margin-bottom: 20px;
+  background-color: #f4f4f4;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.selected-option-card img {
+  width: 100px;
+  height: auto;
+  margin-right: 20px;
+}
+
+.selected-option-card .ride-option-details {
+  flex-grow: 1;
+}
+
+.selected-option-card h3 {
+  margin-bottom: 5px;
+}
+
+.selected-option-card p {
+  margin: 0;
+}
+
+.confirm-button {
+  display: inline-block;
+  margin-bottom: 10px;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left:5px;
+}
+
+.confirm-button:hover {
+  background-color: #0056b3;
+}
+
+.back-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #ff0000;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left:  20px;
+}
+
+.back-button:hover {
+  background-color: #cc0000;
+}
+
